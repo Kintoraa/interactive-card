@@ -5,6 +5,8 @@ import { DisplayCard} from "./component/card.jsx";
 import {CVGCard, DateCard, FormCard, NameCard, NumberCard} from "./component/formCard.jsx";
 import {useState} from "react";
 import imgBackGround from "/src/assets/images/bg-main-desktop.png";
+import backCardUrl from "/src/assets/images/back-card.png";
+import frontCardUrl from "/src/assets/images/front-card.png";
 
 
 
@@ -21,8 +23,8 @@ function App() {
     return (
             <div className={"appGrid"}>
         <Background url={imgBackGround}>
-            <DisplayCard url={"/src/assets/images/bg-card-back.png"} alt={"back card"}  cvg={cvg}  isFrontCard={false} className={"backCard"}></DisplayCard>
-        <DisplayCard url={"/src/assets/images/bg-card-front.png"} alt={"front card"} isFrontCard={true} className={"frontCard"}   cardholderName={cardholderName}
+            <DisplayCard url={backCardUrl} alt={"back card"}  cvg={cvg}  isFrontCard={false} className={"backCard"}></DisplayCard>
+        <DisplayCard url={frontCardUrl} alt={"front card"} isFrontCard={true} className={"frontCard"}   cardholderName={cardholderName}
                      cardNumber={cardNumber}
                      year={year}
                      month={month}></DisplayCard>
