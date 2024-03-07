@@ -5,8 +5,8 @@ import { DisplayCard} from "./component/card.jsx";
 import {CVGCard, DateCard, FormCard, NameCard, NumberCard} from "./component/formCard.jsx";
 import {useState} from "react";
 import imgBackGround from "/src/assets/images/bg-main-desktop.png";
-import backCardUrl from "/src/assets/images/back-card.png";
-import frontCardUrl from "/src/assets/images/front-card.png";
+import backCardUrl from "/src/assets/images/bg-card-back.png";
+import frontCardUrl from "/src/assets/images/bg-card-front.png";
 
 
 
