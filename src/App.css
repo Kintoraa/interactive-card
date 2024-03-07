@@ -9,6 +9,7 @@
 .background {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .imageBackground {
@@ -18,6 +19,9 @@
 label {
     display: flex;
     
+}
+.imageCard {
+    position: relative;
 }
 
 .circleConfirm {
@@ -73,48 +77,106 @@ button {
 
 .frontCard, .backCard {
     position: absolute;
-    height: auto;
-    width: 100px;
+
+}
+
+.imageCard {
+    height: 245px;
+    width: 447px;
+}
+.cvg {
+position: absolute;
+right: 50px;
+
 }
 
 
 .frontCard {
-    right: 450px;
-    padding: 0 0 550px 0;
-
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
 .backCard {
-    right: 200px;
+    left: 90%;
+    top: 35%;
+    transform: translate(-50%, -50%);
 
 }
 
-@media only screen and (max-width: 1410px)  {
-    .frontCard  {
-        right: 300px;
-    }
+.containerCardFront {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 447px;
+    height: 245px;
+}
 
-    .backCard {
-        right: 200px;
-    }
-}@media only screen and (max-width: 1120px)  {
+.containerCardBack {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 245px;
+    width: 447px;
+}
+
+@media only screen and (max-width: 1220px)  {
     .frontCard  {
-        padding: 0;
-        left: 80px;
-        top: 190px;
+        top: 65%;
+        left: 50%;
 
     }
 
     .imageBackground {
-        height: 500px;
+        height: 600px;
     }
 
     .backCard {
-        left: 120px;
-        top: 50px;
+        left: 60%;
+        top: 40%;
     }
 
     .appGrid {
         display: block;
     }
 }
+
+
+
+/*@media only screen and (max-width: 790px) {*/
+
+/*    .frontCard  {*/
+
+/*        left: 10%;*/
+/*        top: 190px;*/
+
+/*    }*/
+
+/*    .backCard {*/
+/*        left: 20%;*/
+/*        top: 50px;*/
+/*    }*/
+
+/*}*/
+@media only screen and (max-width: 600px) {
+
+    .frontCard {
+        left: 50%;
+        top: 70%;
+
+    }
+    .imageCard, .containerCardFront, .containerCardBack {
+        width: 380px;
+    }
+
+    .backCard {
+        left: 50%;
+        top: 45%;
+    }
+
+    .cvg {
+        right: 75px;
+    }
+}
+

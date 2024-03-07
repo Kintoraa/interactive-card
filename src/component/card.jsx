@@ -2,20 +2,13 @@ export const DisplayCard = (props) => {
     const {  cvg, url, alt, isFrontCard, cardholderName, cardNumber, year, month, className} = props
 
 
-    const divStyle = {
-        position: "relative",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        height: 245,
-        width: 447,
-    }
+
 
 
     return (
         <div className={className}>
-            <div style={divStyle}>
-                <img src={url} alt={alt} style={{position: "relative"}}/>
+            <div className="containerCardBack" >
+                <img  className="imageCard" src={url} alt={alt} />
                 {isFrontCard ? <FrontCard cardNumber={cardNumber}
                                           year={year}
                                           month={month}
@@ -29,27 +22,16 @@ export const DisplayCard = (props) => {
 }
 
 const BackCard = ({cvg}) => {
-    const pStyle = {
-        position: "absolute",
-        right: 50,
 
-    }
     return (
         <>
-            <p style={pStyle}>{cvg ? cvg : "000"}</p>
+            <p className="cvg">{cvg ? cvg : "000"}</p>
         </>
     )
 }
 
 const FrontCard = (props) => {
     const {cardholderName, cardNumber, year, month} = props
-    const divStyle = {
-        display: "grid",
-        alignItems: "center",
-        gridTemplateRows: "1fr 1fr 1fr",
-        width: 447,
-        height: 245,
-    }
 
     const cercle = {
         width: 50,
@@ -71,7 +53,7 @@ const FrontCard = (props) => {
     return (
         <>
             <div style={{position: "absolute"}}>
-                <div style={divStyle}>
+                <div className="containerCardFront">
                     <div style={{display: "flex", alignItems: "center"}}>
                         <div style={cercle}></div>
                         <div style={minCercle}></div>
