@@ -4,7 +4,7 @@ import {Background} from "./component/background.jsx";
 import { DisplayCard} from "./component/card.jsx";
 import {CVGCard, DateCard, FormCard, NameCard, NumberCard} from "./component/formCard.jsx";
 import {useState} from "react";
-import imgBackGround from "./img/backGroud.jpg";
+import imgBackGround from "/src/assets/images/bg-main-desktop.png";
 
 
 
