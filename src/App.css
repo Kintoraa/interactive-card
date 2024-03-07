@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    align-content: center;
+    text-align: center;
+    font-family: "Bahnschrift", sans-serif;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+}
+
+.imageBackground {
+    width: 100%;
+    height: 100vh;
+}
+label {
+    display: flex;
+    
+}
+
+.circleConfirm {
+    border-radius: 90px;
+    padding: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,14,72,1) 11%, rgba(60,27,108,1) 71%, rgba(112,50,171,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+
+input {
+    height: 40px;
+    width: 330px;
+    border-radius: 10px ;
+    border: solid 1px #ceeaff;
+}
+
+input:focus {
+    border-color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+
+}
+
+.inputDate {
+    height: 40px;
+    width: 100px;
+}
+
+.appGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    background: #350669;
+    color: white;
+    height: 60px;
+    width: 300px;
+}
+
+.frontCard, .backCard {
+    position: absolute;
+    height: auto;
+    width: 100px;
+}
+
+
+.frontCard {
+    right: 450px;
+    padding: 0 0 550px 0;
+
+}
+
+.backCard {
+    right: 200px;
+
+}
+
+@media only screen and (max-width: 1410px)  {
+    .frontCard  {
+        right: 300px;
+    }
+
+    .backCard {
+        right: 200px;
+    }
+}@media only screen and (max-width: 1120px)  {
+    .frontCard  {
+        padding: 0;
+        left: 80px;
+        top: 190px;
+
+    }
+
+    .imageBackground {
+        height: 500px;
+    }
+
+    .backCard {
+        left: 120px;
+        top: 50px;
+    }
+
+    .appGrid {
+        display: block;
+    }
+}
