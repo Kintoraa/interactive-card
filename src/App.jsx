@@ -18,7 +18,7 @@ function App() {
 
     return (
             <div className={"appGrid"}>
-        <Background url={ "/src/assets/images/bg-main-desktop.png"}>
+        <Background url={ "src/assets/images/bg-main-desktop.png"}>
             <DisplayCard url={"/src/assets/images/bg-card-back.png"} alt={"back card"}  cvg={cvg}  isFrontCard={false} className={"backCard"}></DisplayCard>
         <DisplayCard url={"/src/assets/images/bg-card-front.png"} alt={"front card"} isFrontCard={true} className={"frontCard"}   cardholderName={cardholderName}
                      cardNumber={cardNumber}
